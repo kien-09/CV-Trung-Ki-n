@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhapdiem</title>
+    <style type="text/css">
+        table, th, td {
+            border: 2px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table border="1" style="font-size: 20px; color: black;background-size: cover; background: burlywood">
+    <tr>
+        <th>Tên môn học</th>
+        <th>Điểm thành phần</th>
+        <th>Điểm thi</th>
+        <th> Điểm trung bình môn</th>
+
+    </tr>
+    <tr>
+        <td> Vật Lí</td>
+        <td>
+            <script>
+                let a = +prompt(' Nhập điểm thành phần vật lí vào')
+                document.write(a);
+            </script>
+        </td>
+        <td>
+            <script>
+                let x = +prompt('Nhập điểm thi vật lí vào')
+                document.write(x)
+            </script>
+        </td>
+        <td>
+            <script>
+                const t = +((a + x) / 2)
+                document.write((a + x) / 2)
+            </script>
+        </td>
+
+    </tr>
+    <tr>
+        <td> Hóa Học</td>
+        <td>
+            <script>
+                let b = +prompt('Nhập điểm thành phần hóa học vào')
+                document.write(b);
+            </script>
+        </td>
+        <td>
+            <script>
+                let y = +prompt('Nhập điểm thi hóa học vào')
+                document.write(y);
+            </script>
+        </td>
+        <td>
+            <script>
+                const g = +((b + y) / 2)
+                document.write((b + y) / 2)
+            </script>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Sinh học</td>
+        <td>
+            <script>
+                let c = +prompt('Nhập điểm thành phần sinh học vào');
+                document.write(c);
+            </script>
+        </td>
+        <td>
+            <script>
+                let z = +prompt('Nhập điểm thi sinh học vào')
+                document.write(z)
+            </script>
+        </td>
+        <td>
+            <script>
+                const v = +((c + z) / 2)
+                document.write((c + z) / 2)
+            </script>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="3">Điểm tổng</th>
+        <td>
+            <script>
+                document.write((t + g + v) / 3);
+            </script>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
