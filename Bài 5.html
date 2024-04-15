@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập điểm bài kiểm tra')
+    let b = +prompt('Nhập điểm bài thi giữa kì')
+    let c = +prompt('Nhập điểm bài thi cuối kì')
+    if (a < 5) {
+        document.write('Bài kiểm tra học lực yếu' + '<br>')
+    }
+    if (a >= 5 && a < 8) {
+        document.write('Bài kiểm tra học lực khá' + '<br>')
+    }
+    if (a >= 8 && a <= 10) {
+        document.write('Bài kiểm tra học lực giỏi' + '<br>')
+    }
+    if (b < 5) {
+        document.write('Bài thi giữa kì học lực yếu' + '<br>')
+    }
+    if (b >= 5 && b < 8) {
+        document.write('Bài thi giữa kì học lực khá' + '<br>')
+    }
+    if (b >= 8 && b <= 10) {
+        document.write('Bài thi giữa kì học lực giỏi' + '<br>')
+    }
+    if (c < 5) {
+        document.write('Bài thi cuối kì học lực yếu' + '<br>')
+    }
+    if (c >= 5 && c < 8) {
+        document.write('Bài thi cuối kì học lực khá' + '<br>')
+    }
+    if (c >= 8 && c <= 10) {
+        document.write('Bài thi cuối kì học lực giỏi' + '<br>')
+    } else {
+        document.write('Điểm không hợp lệ')
+    }
+
+</script>
+</body>
+</html>
